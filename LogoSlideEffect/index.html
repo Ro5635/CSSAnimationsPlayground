@@ -11,11 +11,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Meta refersh header for developement use -->
     <meta http-equiv="refresh" content="1.5">
 
     <style> 
+
+    html {
+        width: 100%;
+    }
 
     .pageContainer {
         height: 40vh;
@@ -27,17 +31,17 @@
     }
 
     .animationCont {
-        width: 900px;
- 
+        width: 50%;
         background-color: blue;
+        margin: auto;
         position: relative;
     }
 
     .logosAnimation {
         animation-fill-mode: forwards;
         position: absolute;
-        animation-duration: 1.5s;
-        transition-timing-function: ease;
+        animation-duration: 2s;
+        transition-timing-function:  cubic-bezier(0.65, 0.05, 0.36, 1);
     }
 
     .pageLogos {
@@ -72,25 +76,29 @@
 
 
     @keyframes KeyFrames_LogoA {
-        0%   {left:400px;}
-        100%  {left:0px;}
+        /* Remove the width of the logo div to center*/
+        0%   {left: calc(50% - 50px);}
+        100%  {left:  calc(0% - 50px);}
 
     }
 
     @keyframes KeyFrames_LogoB {
-        0%   {left:400px;}
-        100%  {left:200px;}
+        /* Remove the width of the logo div to center*/
+        0%   {left: calc(50% - 50px);}
+        100%  {left:  calc(25% - 50px);}
 
     }
 
     @keyframes KeyFrames_LogoC {
-        0%   {left:400px;}
-        100%  {left:600px;}
+        /* Remove the width of the logo div to center*/
+        0%   {left: calc(50% - 50px);}
+        100%  {left:  calc(75% - 50px);}
     }
 
     @keyframes KeyFrames_LogoD {
-        0%   {left:400px;}
-        100%  {left:800px;}
+        /* Remove the width of the logo div to center*/
+        0%   {left: calc(50% - 50px);}
+        100%  {left: calc(100% - 50px);}
     }
 
 </style>
