@@ -1,0 +1,112 @@
+<!-- 
+--   CSS Animation, Slides logos from a common point out into a line
+-- 
+--  Images are linked fron Google image searches and are likley to
+--  be dead links... 
+--
+--  Robert Curran 2018
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta refersh header for developement use -->
+    <meta http-equiv="refresh" content="1.5">
+
+    <style> 
+
+    .pageContainer {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animationCont {
+        margin: auto;
+        width: 40%;
+        background-color: blue;
+        position: relative;
+    }
+
+    .logosAnimation {
+        animation-fill-mode: forwards;
+        position: absolute;
+        animation-duration: 1s;
+        transition-timing-function: ease;
+    }
+
+    .pageLogos {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        display: inline-block;
+        background-size: cover;
+        background-size: contain;
+    }
+
+
+    .logoA {
+        left: 100px;
+        animation-name: KeyFrames_LogoA;
+        background-image: url("http://icons.iconarchive.com/icons/dtafalonso/android-l/512/Youtube-icon.png");
+    }
+
+    .logoB {
+        left: 100px;
+        animation-name: KeyFrames_LogoB;
+        background-image: url("http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png");
+    }
+
+    .logoC {
+        left: 100px;
+        animation-name: KeyFrames_LogoC;
+        background-image: url("http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png");
+    }
+
+    .logoD {
+        left: 100px;
+        animation-name: KeyFrames_LogoD;
+        background-image: url("https://png.icons8.com/metro/1600/linkedin.png");
+    }
+
+
+    @keyframes KeyFrames_LogoA {
+        0%   {left:200px;}
+        100%  {left:400px;}
+
+    }
+
+    @keyframes KeyFrames_LogoB {
+        0%   {left:200px;}
+        100%  {left:600px;}
+
+    }
+
+    @keyframes KeyFrames_LogoC {
+        0%   {left:200px;}
+        100%  {left:0px;}
+    }
+
+    @keyframes KeyFrames_LogoD {
+        0%   {left:200px;}
+        100%  {left:-200px;}
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="pageContainer">
+        <div class="animationCont">
+         <div class="logoA logosAnimation pageLogos"></div>
+         <div class="logoB logosAnimation pageLogos"></div>
+         <div class="logoC logosAnimation pageLogos"></div>
+         <div class="logoD logosAnimation pageLogos"></div>
+
+     </div>
+ </div>
+
+</body>
+</html>
