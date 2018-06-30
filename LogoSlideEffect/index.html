@@ -5,11 +5,13 @@
 --  be dead links... 
 --
 --  Robert Curran 2018
- -->
+-->
 
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- Meta refersh header for developement use -->
     <meta http-equiv="refresh" content="1.5">
 
@@ -19,12 +21,14 @@
         height: 40vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+
     }
 
     .animationCont {
-        margin: auto;
-        width: 40%;
+        width: 900px;
+ 
         background-color: blue;
         position: relative;
     }
@@ -32,65 +36,61 @@
     .logosAnimation {
         animation-fill-mode: forwards;
         position: absolute;
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         transition-timing-function: ease;
     }
 
     .pageLogos {
         width: 100px;
         height: 100px;
-        position: absolute;
-        display: inline-block;
+        border-radius: 50%;
+    
         background-size: cover;
         background-size: contain;
     }
 
 
     .logoA {
-        left: 100px;
         animation-name: KeyFrames_LogoA;
-        background-image: url("http://icons.iconarchive.com/icons/dtafalonso/android-l/512/Youtube-icon.png");
+        background-color: orange;
     }
 
     .logoB {
-        left: 100px;
         animation-name: KeyFrames_LogoB;
-        background-image: url("http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png");
+        background-color: red;
     }
 
     .logoC {
-        left: 100px;
         animation-name: KeyFrames_LogoC;
-        background-image: url("http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png");
+        background-color: blue;
     }
 
     .logoD {
-        left: 100px;
         animation-name: KeyFrames_LogoD;
-        background-image: url("https://png.icons8.com/metro/1600/linkedin.png");
+        background-color: green;
     }
 
 
     @keyframes KeyFrames_LogoA {
-        0%   {left:200px;}
-        100%  {left:400px;}
+        0%   {left:400px;}
+        100%  {left:0px;}
 
     }
 
     @keyframes KeyFrames_LogoB {
-        0%   {left:200px;}
-        100%  {left:600px;}
+        0%   {left:400px;}
+        100%  {left:200px;}
 
     }
 
     @keyframes KeyFrames_LogoC {
-        0%   {left:200px;}
-        100%  {left:0px;}
+        0%   {left:400px;}
+        100%  {left:600px;}
     }
 
     @keyframes KeyFrames_LogoD {
-        0%   {left:200px;}
-        100%  {left:-200px;}
+        0%   {left:400px;}
+        100%  {left:800px;}
     }
 
 </style>
@@ -99,14 +99,13 @@
 <body>
 
     <div class="pageContainer">
-        <div class="animationCont">
-         <div class="logoA logosAnimation pageLogos"></div>
-         <div class="logoB logosAnimation pageLogos"></div>
-         <div class="logoC logosAnimation pageLogos"></div>
-         <div class="logoD logosAnimation pageLogos"></div>
-
-     </div>
- </div>
+            <div class="animationCont">
+               <div class="logoA logosAnimation pageLogos"></div>
+               <div class="logoB logosAnimation pageLogos"></div>
+               <div class="logoC logosAnimation pageLogos"></div>
+               <div class="logoD logosAnimation pageLogos"></div>
+           </div>
+   </div>
 
 </body>
 </html>
