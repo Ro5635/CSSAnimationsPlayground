@@ -1,0 +1,3 @@
+# CSS Animations Playaround
+
+A repo to hold some CSS animation examples that I have made, made for my own uses for ripping them out and using elsewhere. Feel free to use but there are going to be far better resources online elsewhere...
